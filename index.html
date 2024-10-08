@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!--کل-->
+    <div
+      class="cal w-[340px] sm:w-[400px] my-[20px] mx-auto bg-[#2d2d2d] rounded-[16px] py-7 px-2 flex flex-col justify-center items-center gap-8 shadow-[6px_6px_15px_gray]"
+    >
+      <!--صفحه نمایش-->
+      <div class="output w-[90%] h-[90px] bg-[#eaeaea] rounded-[8px] border-[#1b1b1b] border-[2px] mx-auto p-[5px_10px] flex flex-col items-center" 
+      style="box-sizing: border-box;">
+        <input
+          type="text"
+          placeholder=""
+          disabled
+          class="num1 w-[97%] h-[40%] text-[20px] bg-[#eaeaea] text-[#383838da] border-none text-right overflow-hidden"
+          style="letter-spacing: 1px;"
+        />
+        <input 
+        type="text"
+        placeholder="0"
+        disabled
+        class="num2 w-[100%] h-[60%] text-[40px] bg-[#eaeaea] text-[#0d0d0dda] border-none text-right overflow-hidden"
+        
+        >
+
+      </div>
+      <!--دکمه ها-->
+      <div class="w-[90%] flex flex-col items-center justify-center gap-5">
+        <div class="w-[100%] flex flex-row justify-between items-center gap-5">
+          <input
+            type="button"
+            value="AC"
+            class=" AC w-[22%] h-[60px] rounded-[8px] border-none bg-[#aeaeae] text-[black] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#cacaca]"
+          />
+          <input
+            type="button"
+            value="DEL"
+            class=" DEL w-[22%] h-[60px] rounded-[8px] border-none bg-[#aeaeae] text-[black] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#cacaca]"
+          />
+          <input
+            type="button"
+            value="%"
+            class="operator val w-[22%] h-[60px] rounded-[8px] border-none bg-[#aeaeae] text-[black] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#cacaca]"
+          />
+          <input
+            type="button"
+            value="/"
+            class="operator val w-[22%] h-[60px] rounded-[8px] border-none bg-[#ED9F2F] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#d08824]"
+          />
+        </div>
+        <div class="w-[100%] flex flex-row justify-between items-center gap-5">
+          <input
+            type="button"
+            value="7"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="8"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="9"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="*"
+            class="operator val w-[22%] h-[60px] rounded-[8px] border-none bg-[#ED9F2F] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#d08824]"
+          />
+        </div>
+        <div class="w-[100%] flex flex-row justify-between items-center gap-5">
+          <input
+            type="button"
+            value="4"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="5"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="6"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="-"
+            class="operator val w-[22%] h-[60px] rounded-[8px] border-none bg-[#ED9F2F] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#d08824]"
+          />
+        </div>
+        <div class="w-[100%] flex flex-row justify-between items-center gap-5">
+          <input
+            type="button"
+            value="1"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="2"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="3"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="+"
+            class="operator val w-[22%] h-[60px] rounded-[8px] border-none bg-[#ED9F2F] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#d08824]"
+          />
+        </div>
+        <div class="w-[100%] flex flex-row justify-between items-center gap-5">
+          <input
+            type="button"
+            value="00"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="0"
+            class="val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          />
+          <input
+            type="button"
+            value="."
+            class=" val num w-[22%] h-[60px] rounded-[8px] border-none bg-[#606060] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#606060b2]"
+          
+          />
+          <input
+            type="button"
+            value="="
+            class="equal w-[22%] h-[60px] rounded-[8px] border-none bg-[#ED9F2F] text-[white] text-[25px] shadow-[2px_2px_10px_black] cursor-pointer hover:bg-[#d08824]"
+          />
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-[11px] font-sans">" Designed by Hedieh Moeini "</p>
+    <!--اتمام کل-->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
